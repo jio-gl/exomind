@@ -1,0 +1,102 @@
+-----
+FACIL
+-----
+
+-FULLTEXT index para hacer busquedas de subcadenas en nodos y atributos.
+TASK
+
+-Hacer tests de Unidad para todo, o por lo menos aprender como se hacen y hacer algunos.
+Aprender como se corren todos a la vez.
+TASK
+
+- Agarrar TAGS de LinkedIn y Twitter
+
+- Revisar otros sitios que agregan cosas sociales como Wink,
+	http://press.jrc.it/NewsExplorer/entities/en/483908.html
+	http://press.jrc.it/NewsExplorer/flash/visual.jsp?id=483908
+	http://www.nndb.com/people/074/000169564/
+	http://mapper.nndb.com/start/?id=169564	
+
+-----
+MEDIO
+-----
+
+-Hacer el Bot Abstracto.
+TASK
+
+-------
+DIFICIL
+-------
+
+-Hacer el crawler con multi-threading completo (no solo por batches), diseñarlo bien para que conviva con el corral de Bots.
+TASK
+
+-Guardar un log par hacer rollback y time-machine.
+TASK
+
+
+
+---------
+DONE-DONE-DONE
+--------
+
+-----
+FACIL
+-----
+
+-Agregar focus node para pintarlo mas grande.
+TASK 
+
+-Agregar focus region para plotear solamente esa parte, onda max 200 nodos. DONE
+TASK
+
+-Agregar soporte para grafos dirigidos en disco. DONE
+TAsk
+
+-Hacer el exportador a archivo de texto.
+TASK
+
+-Hacer la clase para extraer contenido de documentos (html por ejemplo) usando regexes.
+TASK
+
+
+
+-----
+MEDIO
+-----
+
+- Agregar EntrophyMeter plugeables para pesar los datos y Filterer para filtrar online.
+Lo bueno es que sea online, sino se puede hacer como un modulo post-crawling.
+	- StringLenEntropyMeter, SE_EntrophyMeter
+
+- Agregar soporte para modulos plugeables.
+
+-Agregar soporte para decorators y para filters.
+
+-Agregar filter por search engine entrophy.
+
+-Agregar decorator de serch engine distance.
+
+-Hacer la GraphFactory que persiste grafos a MySQL. Que soporte dirigidos.
+TASK
+
+-Resolvel el problema de los aliases para los nodos, por ejemplo puede pasar que usuario
+de Twitter sea carlochonperez y que ademas el nombre del tipo sea "Carlos Perez", ambos 
+deberian ser agregados al nodo.
+TASK, DONE
+
+-------
+DIFICIL
+-------
+
+-Hacer el SearchCortex, para centralizar todas las queries a search engines y funcionalidades
+mas complejas, como google distance, unicidad de una persona (que tan comun es su nombre).
+TASK
+
+-Hacer que todo en la base de datos "exomind" este encriptada con
+AES y por una clave ingresada al comenzar el programa. Todo los VARCHAR 
+y todos los nombres de las tablas. Podria haber un comando "change password"
+que desencripte y encripte todo de vuelta.
+
+-Hacer el crawler con multi-threading por batch, diseñarlo bien para que conviva con el corral de Bots.
+TASK

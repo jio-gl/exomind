@@ -1,0 +1,53 @@
+
+Tested on Ubuntu:
+
+- Python 2.* where * above is above or equal to 4.
+
+- Uncompress Exomind-v0.2.tgz on your favorite folder. 
+	- tar xzvf Exomind-v0.2.tgz
+	- cd Exomind/
+
+- Run: 
+	./install_lib 
+OR
+ 	python setup.py build_py;
+ 	sudo python setup.py install_lib;
+	python setup.py install_data;
+	sudo python setup.py install_egg_info;
+ to install Exomind configurations on ~/.exomind and 
+  the library exomind on /usr/lib/python2.?/site-packages/
+
+- Install MySQL on localhost: (needed)
+	- sudo apt-get install mysql* 
+	- set user/password on ~/.exomind/exomind.xml
+
+- Install MySQL interface for python. (needed)
+	- http://sourceforge.net/projects/mysql-python
+
+- Install python-mechanize (some web modules use it)
+	- http://wwwsearch.sourceforge.net/mechanize/
+
+- Install graphviz and pygraphviz (only for command plot())
+	- sudo apt-get install graphviz* 
+	- sudo apt-get install pygraphviz* or
+	 https://networkx.lanl.gov/download/pygraphviz/	
+
+- Edit ~/.exomind/exomind.xml for web proxy configuration (no all modules work with a proxy http, remove them from bot.xml, expanders.xml and weigh_scales.xml if affirmative).
+
+- Edit ~/.exomind/*.xml for bots configurations, some bots require to introduce a user/pass
+ (TwitterBot, FacebookBot, LinkedInBot and MSNBot), we strongly recommend to use dummy 
+ accounts on this case, not your active ones, otherwise remove those bots from bots.xml and expanders.xml. 
+
+- View examples on folder examples/ or directly run python:
+>>>> from exomind import *
+>>>> help()
+ or
+>>>> from exomind.Exomind import Exomind
+>>>> dir(Exomind)
+
+
+To uninstall it:
+	- Remove the library:
+		sudo rm -R /usr/lib/python2.?/site-packages/exomind/
+	- Remove the configuration files:
+		rm -R ~/.exomind/

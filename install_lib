@@ -1,0 +1,7 @@
+#!/bin/sh
+
+python setup.py build_py;
+sudo python setup.py install_lib;
+python setup.py install_data;
+sudo python setup.py install_egg_info;
+

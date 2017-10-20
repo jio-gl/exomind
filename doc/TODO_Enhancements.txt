@@ -1,0 +1,61 @@
+-----
+FACIL
+-----
+
+-Agregar Attributo de "Date" con la fecha o timestamp.
+ENHANCEMENT
+
+-----
+MEDIO
+-----
+
+- Usar la Google Distance para identificar personas repetidas para vecinos de orden 1 o 2,
+no mas que eso para que sea escalable.
+
+-------
+DIFICIL
+-------
+
+-Poner timestamp a los nodos y ejes.
+ENHANCEMENT
+
+---------
+DONE-DONE-DONE
+--------
+
+-----
+FACIL
+-----
+
+-Usar metaprogramacion para que Console.py sea mas compacto.
+
+-Agregar Attributo de "Resource" con un URL para conocer la fuente de la informacion.
+ENHANCEMENT
+
+- Hacer andar Twitter de vuelta o algo de redes sociales sino es una lagrima solo con mails.
+
+- Hacer un hack para aristas inversas para "followers" de Twitter por ejemplo.
+
+- Sanear el input de los queues para que se puedan meter arrobas o otras frutas en el nombre.
+
+
+-----
+MEDIO
+-----
+
+-Ponerle un Lock para la concurrencia en cada Bots y meter el sleep bajo failure dentro 
+del Bot, para que el sleep sea por Bot.
+ENHANCEMENT
+
+-Que cada Bot vea el grafo y pueda meter lo que quiera cuando quiera, o sea, poner
+un Lock en un metodo de BlackWidow al que se le pasan los 2 diccionarios y ya.
+ENHANCEMENT
+
+-Hacer que la GraphFactory soporte grafos no dirigidos de manera eficiente.
+y atributos multiples.
+ENHANCEMENT
+
+-------
+DIFICIL
+-------
+

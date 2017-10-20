@@ -1,0 +1,36 @@
+-----
+FACIL
+-----
+
+-----
+MEDIO
+-----
+
+-------
+DIFICIL
+-------
+
+
+
+---------
+DONE-DONE-DONE
+--------
+
+-----
+FACIL
+-----
+
+- Cuando hay varios expanders solo agrega la info del primero.
+- Habia un loop infinito en plot porque el bfs repetia nodos.
+
+-----
+MEDIO
+-----
+
+- Hay algun tema con los indices "primary key", cuando crawleas "Dragos Ruiu" con inforcorte::mails
+pasa que se rompe despues cuando queres plotear. Tal vez este fixeado ahora que le puse un peso por cada vez que lo agregas.
+
+-------
+DIFICIL
+-------
+
